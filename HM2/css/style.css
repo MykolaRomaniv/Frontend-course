@@ -222,9 +222,9 @@ p::first-letter {
         text-align: center;
         max-width: 100%;
     }
-
-    h2 {
-        font-weight: lighter !important;
+    
+    .heading.tm-content-box h2, h2 {
+        font-weight: lighter;
         text-transform: uppercase;
     }
 
@@ -233,7 +233,7 @@ p::first-letter {
     }
 
     .padding-medium>ol {
-        list-style: none !important;
+        list-style: none;
     }
 
     .padding-medium>ol li:nth-child(odd) {
