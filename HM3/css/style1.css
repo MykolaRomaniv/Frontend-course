@@ -1,6 +1,7 @@
 body {
+  background-color: #ffffff;
   color: #2c2f3c;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Hind", sans-serif;
   margin: 0; }
 
 .landing-logo {
@@ -30,6 +31,7 @@ header {
   header .header-wrap {
     margin-left: 190px; }
     header .header-wrap .header_heading {
+      font-family: "Source Sans Pro", sans-serif;
       font-weight: bold;
       width: 600px;
       font-size: 60pt;
@@ -49,6 +51,7 @@ header {
       white-space: pre-line;
       font-size: 14pt; }
     header .header-wrap .header_button {
+      font-family: "Source Sans Pro", sans-serif;
       background-color: #699900;
       border: #699900;
       color: #ffffff;
@@ -63,6 +66,7 @@ header {
         background-color: #7bb300; }
 
 main .section_text {
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   font-size: 48pt;
   position: relative; }
@@ -94,6 +98,7 @@ main .section_card_wrap {
       border-radius: 8px;
       margin: 25px; }
     main .section_card_wrap .section_card .section_card_heading {
+      font-family: "Source Sans Pro", sans-serif;
       color: #ffffff;
       text-align: center;
       font-size: 30pt;
@@ -128,6 +133,7 @@ main .section_banner {
     padding-left: 125px;
     padding-bottom: 50px; }
     main .section_banner .section_banner_text_wrap .section_banner_heading {
+      font-family: "Source Sans Pro", sans-serif;
       font-size: 30pt;
       font-weight: bold;
       position: relative;
@@ -145,6 +151,7 @@ main .section_banner {
       font-size: 18pt;
       color: #c0c3ce; }
   main .section_banner .section_banner_button {
+    font-family: "Source Sans Pro", sans-serif;
     background-color: #699900;
     border: #699900;
     color: #ffffff;

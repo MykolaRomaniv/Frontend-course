@@ -1,18 +1,6 @@
-$main-text-color: #2c2f3c;
-$main-font-stack:'Source Sans Pro', sans-serif;
-$logo-font: 'Hind', sans-serif;
-$text-hightlite-color: #14a0c7;
-$bg-img: url(../img/m-h-day.jpg);
 $margin-top-logo: 25px;
-$btn-color: #699900;
-$btn-text-color: #ffffff;
 $border-radius: 8px;
-$section-card-color: #21232e;
-$card-heading-color: $btn-text-color;
-$inner-text-color: #c0c3ce;
-$banner-gradient: linear-gradient(45deg, #699900, #2b59dc);
 $move: 227px/2;
-$footer-bg-color: #21232e;
 
 @mixin text-highlight($width: 100%, $left:0) {
     content: "";
@@ -26,6 +14,7 @@ $footer-bg-color: #21232e;
 }
 
 @mixin btn {
+    font-family: $headers-font;
     background-color: $btn-color;
     border: $btn-color;
     color: $btn-text-color;
@@ -42,13 +31,14 @@ $footer-bg-color: #21232e;
 }
 
 body {
+    background-color: $body-bg-color;
     color: $main-text-color;
     font-family: $main-font-stack;
     margin: 0;
 }
 
 .landing-logo {
-    font-family: $logo-font;
+    font-family: $main-font-stack;
     display: flex;
 
     img {
@@ -84,6 +74,7 @@ header {
         margin-left: 190px;
 
         .header_heading {
+            font-family: $headers-font;
             font-weight: bold;
             width: 600px;
             font-size: 60pt;
@@ -110,6 +101,7 @@ header {
 
 main {
     .section_text {
+        font-family: $headers-font;
         text-align: center;
         font-size: 48pt;
         position: relative;
@@ -128,7 +120,6 @@ main {
             border-radius: $border-radius;
             width: 490px;
             height: 570px;
-            // text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -142,7 +133,8 @@ main {
             }
 
             .section_card_heading {
-                color: $card-heading-color;
+                font-family: $headers-font;
+                color: $card-heading-text-color;
                 text-align: center;
                 font-size: 30pt;
                 font-weight: bold;
@@ -178,6 +170,7 @@ main {
             padding-bottom: 50px;
 
             .section_banner_heading {
+                font-family: $headers-font;
                 font-size: 30pt;
                 font-weight: bold;
                 position: relative;
