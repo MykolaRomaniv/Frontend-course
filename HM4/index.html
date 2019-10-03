@@ -37,22 +37,26 @@
         </div>
     </header>
     <main>
-        <div class="about">
-            <p class="black-text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec quam fells, ultricies nec, pellentesque eu,
-                pretium quis, sem. Nulla consequat massa quis enim.
-            </p>
-            <p class="white-text">
-                Lorem ipsum dolor, consectetur adipiscing. Aenean <b>commodo ligula</b> eget dolor.
-            </p>
-        </div>
+        <section class="about">
+            <div class="black-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam fells, ultricies nec, pellentesque eu,
+                    pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+            </div>
+            <div class="white-text">
+                <p>
+                    Lorem ipsum dolor, consectetur adipiscing. <br> Aenean <b>commodo ligula</b> eget dolor.
+                </p>
+            </div>
+        </section>
         <section class="featured-articles">
             <h2>Read some of our <b>featured articles</b></h2>
             <div class="article-wraper">
-                <div class="article">
-                    <img src="img/sample-1.jpg" alt="article image">
+                <!-- <div class="article"> -->
+                    <img src="img/sample-1.jpg" alt="article image" class="article-img">
                     <p class="article-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut ipsa dicta dolorem a
                         quibusdam
@@ -69,8 +73,8 @@
                         eum quasi vel nobis dolores dolore tempora, ex, assumenda quam veritatis, iure optio soluta
                         sequi?
                     </p>
-                </div>
-                <div class="article">
+                <!-- </div> -->
+                <!-- <div class="article"> -->
                     <p class="article-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut ipsa dicta dolorem a
                         quibusdam
@@ -88,8 +92,8 @@
                         sequi?
                     </p>
                     <img src="img/sample-2.jpg" alt="article image" class="article-img">
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div>  -->
         </section>
         <section class="gallery">
             <div class="gallery-wraper">
@@ -106,7 +110,9 @@
                     <img src="img/news-list-4.jpg" alt="article preview image" class="gallery-img">
                     <button class="img-button">Explore</button></div>
             </div>
-            <button class="load-news-btn">Load news</button>
+            <div class="load-news-btn">
+                    <button>Load news</button>
+            </div>
         </section>
     </main>
     <footer>
@@ -121,11 +127,14 @@
                 mollit
                 anim id est laborum
             </p>
-            <p class="subcribe">Subscribe to our <b>newsletter</b></p>
-            <form action="#" method="get">
-                <input type="email" name="email" id="email" placeholder="Enter your e-mail">
-                <input type="submit" value="Subscribe">
-            </form>
+            
+            <div class="subscribe">
+                <p>Subscribe to our <b>newsletter</b></p>
+                <form action="#" method="get">
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
         </div>
         <div class="footer-cr">
             <p class="copyright">&copy; 2019 Epam</p>
