@@ -30,6 +30,7 @@ header {
     height: 68px;
     font-size: 18px; }
     header .header-upper .header-logo {
+      letter-spacing: 3px;
       box-sizing: border-box;
       width: 50%;
       float: left;
@@ -39,32 +40,38 @@ header {
     header .header-upper .header-login {
       box-sizing: border-box;
       width: 50%;
-      padding: 50px 65px 0 0;
+      padding: 50px 70px 0 0;
       float: right; }
       header .header-upper .header-login .login-links {
         float: right; }
-        header .header-upper .header-login .login-links .login {
-          padding: 76px; }
+        header .header-upper .header-login .login-links .signup {
+          padding-left: 70px; }
   header .header-center {
     text-align: center;
     margin: 262px;
     margin-bottom: 222px; }
     header .header-center .header-title {
+      letter-spacing: 12px;
       font-size: 60px;
       margin: 0; }
       header .header-center .header-title span {
         font-size: 110px; }
     header .header-center .header-text {
-      margin: 0px; }
+      letter-spacing: 0.8px;
+      font-size: 16px;
+      margin-top: 5px; }
   header .menu-wraper ul.menu {
     list-style: none;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-bottom: 10px; }
     header .menu-wraper ul.menu .menu-item {
       font-size: 18px;
       background-color: #000000;
       padding: 20px 100px;
       border: 2px solid #ffffff; }
+      header .menu-wraper ul.menu .menu-item:hover {
+        background-color: #1a1a1a; }
 
 main section {
   padding: 0 65px 0 65px; }
@@ -79,18 +86,21 @@ main .about {
     main .about .black-text p {
       margin: 0;
       text-align: left;
+      font-size: 18px;
       padding-left: 20px; }
   main .about .white-text {
     grid-column: 1;
     grid-row: 2; }
     main .about .white-text p {
-      margin: 8px;
-      font-size: 24px; }
+      margin: 8px 0;
+      font-size: 24px;
+      letter-spacing: -1px; }
 main .featured-articles {
   padding-bottom: 105px;
   background-color: #f3f3f3; }
   main .featured-articles h2 {
     position: relative;
+    letter-spacing: 0.5px;
     bottom: 44px;
     font-size: 30px;
     margin: 0;
@@ -104,12 +114,18 @@ main .featured-articles {
     main .featured-articles .article-wraper img {
       width: 100%;
       height: 100%; }
-    main .featured-articles .article-wraper .article-text:nth-child(2) {
-      padding-left: 65px;
+    main .featured-articles .article-wraper .article-text:nth-child(2) p {
+      margin: 0;
+      padding: 30px 15px 28px 110px;
+      font-size: 18px;
+      letter-spacing: -0.1px;
       text-align: right; }
-    main .featured-articles .article-wraper .article-text:nth-child(3) {
-      text-align: left;
-      padding-right: 65px; }
+    main .featured-articles .article-wraper .article-text:nth-child(3) p {
+      margin: 0;
+      padding: 25px 110px 33px 15px;
+      font-size: 18px;
+      letter-spacing: -0.1px;
+      text-align: left; }
 main .gallery {
   padding: 0 45px 45px; }
   main .gallery .gallery-wraper {
@@ -127,48 +143,81 @@ main .gallery {
         height: 100%;
         width: 100%; }
       main .gallery .gallery-wraper .gallery-item button {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: bold;
         background-color: #097774;
         border: none;
         color: #ffffff;
         opacity: 0.8;
         position: relative;
         bottom: 215px;
-        left: 20px;
-        width: 250px;
-        height: 40px; }
+        left: 10px;
+        width: 255px;
+        height: 45px; }
+        main .gallery .gallery-wraper .gallery-item button:hover {
+          background-color: #0da6a2; }
         main .gallery .gallery-wraper .gallery-item button:hover {
           opacity: 1; }
   main .gallery .load-news-btn {
     text-align: center;
     margin: auto; }
     main .gallery .load-news-btn button {
+      letter-spacing: 1px;
       font-size: 16px;
       width: 380px;
       height: 60px;
       background-color: #097774;
       border: none;
       color: #ffffff; }
+      main .gallery .load-news-btn button:hover {
+        background-color: #0da6a2; }
 
 footer .footer-wraper {
   height: 255px;
   background-color: #f3f3f3; }
   footer .footer-wraper p {
+    font-size: 18px;
     margin: 0;
-    padding: 60px 30px 30px; }
+    padding: 55px 30px 15px; }
   footer .footer-wraper .subscribe {
     float: right; }
     footer .footer-wraper .subscribe p {
+      margin-top: 5px;
       display: inline-block;
-      padding: 0;
-      font-size: 28px; }
+      letter-spacing: 1px;
+      font-size: 28px;
+      padding: 0; }
+      footer .footer-wraper .subscribe p b {
+        letter-spacing: 1.5px; }
     footer .footer-wraper .subscribe form {
-      display: inline-block; }
+      display: inline-block;
+      padding-right: 35px; }
+      footer .footer-wraper .subscribe form #email {
+        margin-left: 30px;
+        border: 1px solid #000000;
+        width: 175px;
+        height: 45px;
+        font-size: 18px;
+        padding: 0 0 0 10px;
+        letter-spacing: -0.5px; }
+      footer .footer-wraper .subscribe form #subscribe {
+        background-color: #097774;
+        border: none;
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 5px;
+        font-size: 18px;
+        width: 105px;
+        height: 45px; }
+        footer .footer-wraper .subscribe form #subscribe:hover {
+          background-color: #0da6a2; }
 footer .footer-cr .copyright {
-  float: left; }
+  float: left;
+  font-size: 18px; }
 footer .footer-cr .footer-menu {
   list-style: none;
   float: right; }
   footer .footer-cr .footer-menu .footer-item {
+    font-size: 18px;
     float: right;
     padding-left: 30px; }
