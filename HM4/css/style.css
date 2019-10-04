@@ -114,10 +114,12 @@ main .gallery {
   padding: 0 45px 45px; }
   main .gallery .gallery-wraper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between; }
+    @media screen and (min-width: 320px) and (max-width: 1520px) {
+      main .gallery .gallery-wraper {
+        flex-wrap: wrap; } }
     main .gallery .gallery-wraper .gallery-item {
-      padding: 45px 35px 65px;
+      padding: 45px 40px 65px;
       height: 380px;
       width: 330px; }
       main .gallery .gallery-wraper .gallery-item img {
