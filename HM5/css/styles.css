@@ -1,32 +1,268 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
 :root {
   --bg-color--dark: #0b192f;
   --bg-color--header: #162b4d;
   --link: #fff;
   --link--hover: #b8b8b8;
-  --bg-footer-color: #162b4d;;
+  --bg-footer-color: #162b4d;
+  --margin: 25px;
+  --artice-h2-font-size: 44pt;
+  --font-weight: 200;
 }
 
 body {
   font-family: roboto;
-}
-.post-1 {
-	background: #B71757;
-}
-.post-2 {
-	background: #0D7E71;
-}
-.post-3 {
-	background: #b1660e;
-}
-.post-4 {
-	background: #d12767;
-}
-.post-5 {
-	background: #2d95bb;
+  background-color: var(--bg-color--dark);
+  margin: 0;
 }
 
-/* Your styles go here */
+h2 {
+  font-weight: var(--font-weight);
+  margin: 0;
+}
+
+p {
+  font-weight: var(--font-weight);
+  color: var(--link--hover);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link--hover);
+}
+
+.content-wraper {
+  margin: auto;
+}
+
+@media screen and (min-width:1400px) {
+  .content-wraper {
+    max-width: 1400px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .content-wraper {
+    min-width: 768px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .content-wraper {
+    min-width: 768px;
+  }
+}
+
+/*
+ * HEADER START
+ */
+.header-wraper {
+  background-color: var(--bg-color--header);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  align-self: center;
+}
+
+.header-title h1 {
+  color: #fff;
+  font-weight: var(--font-weight);
+  padding: 0px 25px;
+  margin: 0;
+}
+
+.header-title span {
+  color: #d12767;
+}
+
+.header-menu .menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 65px;
+}
+
+.header-menu .menu li {
+  padding: 50px 25px;
+}
+
+.header-menu .menu li:hover {
+  background-color: #283d5f;
+}
+/*
+ * HEADER END
+ */
+
+ /*
+  * MAIN START
+  */
+.post-1 {
+  background: #B71757;
+}
+
+.post-2 {
+  background: #0D7E71;
+}
+
+.post-3 {
+  background: #b1660e;
+}
+
+.post-4 {
+  background: #d12767;
+}
+
+.post-5 {
+  background: #2d95bb;
+}
+
+.main-wrapper {
+  margin: var(--margin) 0;
+}
+
+.articles article {
+  display: flex;
+}
+
+.articles img:hover {
+  opacity: 0.5;
+}
+
+.articles .img-wrapper {
+  min-width: 50%;
+}
+
+.articles .img-wrapper .img-inner {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+}
+
+.articles .img-wrapper .img-inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.articles h2 {
+  font-size: var(--artice-h2-font-size);
+  color: #fff;
+}
+
+.articles .text-wrapper {
+  width: 50%;
+}
+
+.articles h2 {
+  padding: 50px 50px 0px;
+}
+
+.articles p {
+  padding: 25px 50px 0px;
+}
+
+.articles :nth-child(odd) {
+  flex-direction: row;
+}
+
+.articles :nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.articles :nth-child(even) .text-wrapper {
+  text-align: right;
+}
+
+.date p {
+  padding: 25px 15px;
+  font-size: var(--artice-h2-font-size);
+  margin: 0;
+  font-weight: var(--font-weight);
+  opacity: 0.8;
+}
+
+.date span {
+  font-size: 24pt;
+  display: block;
+}
+/*
+ * MAIN END
+ */
+
+/*
+  * NEWS START
+  */
+.main-content {
+  display: grid;
+  column-gap: var(--margin);
+  grid-template-columns: 1045px 330px;
+}
+
+.news img {
+  width: 100%;
+}
+
+.news article {
+  margin-top: var(--margin);
+  background-color: #fff;
+}
+
+.news .news-text {
+  padding: 50px 45px;
+}
+
+.news a {
+  color: #000;
+}
+
+.news a:hover {
+  color: var(--link--hover);
+}
+/*
+ * NEWS END
+ */
+
+/*
+ * FOOTER START 
+ */
+footer.content-wraper {
+  background-color: var(--bg-footer-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-text-wrapper {
+  padding: 40px 35px;
+}
+
+footer .author {
+  width: 140px;
+}
+
+/* .articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 50%));
+}
+
+.articles img {
+  width: 100%;
+}
+
+.articles :nth-child(4n+1) {
+  grid-column: 1;
+}
+
+.articles :nth-child(4n-1) {
+  grid-column: 2;
+}
+
+.articles :nth-child(4n) {  can`t position text
+  float: left;
+} */
