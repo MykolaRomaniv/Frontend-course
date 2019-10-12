@@ -87,7 +87,8 @@ a:hover {
   padding: 0 65px;
 }
 
-.header-menu .menu li {
+.header-menu .menu a {
+  display: inline-block;
   padding: 50px 25px;
 }
 
