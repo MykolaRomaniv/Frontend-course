@@ -9,6 +9,13 @@
   --font-weight: 200;
 }
 
+@media screen and (max-width:768px) {
+  :root {
+    --margin: 14px;
+    --artice-h2-font-size: 28pt;
+  }
+}
+
 body {
   font-family: roboto;
   background-color: var(--bg-color--dark);
@@ -46,13 +53,17 @@ a:hover {
 
 @media screen and (max-width:768px) {
   .content-wraper {
-    min-width: 768px;
+    max-width: 560px;
   }
 }
 
 @media screen and (max-width:480px) {
+  body {
+    margin: 0 auto;
+  }
+  
   .content-wraper {
-    min-width: 768px;
+    max-width: 480px;
   }
 }
 
@@ -63,6 +74,28 @@ a:hover {
   background-color: var(--bg-color--header);
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+  .header-wraper {
+    background-color: var(--bg-color--header);
+    display: block;
+  }
+
+  .header-title {
+    text-align: center;
+  }
+}
+
+.logo {
+  text-align: center;
+  padding: 30px;
+}
+
+@media screen and (min-width:1400px) {
+  .logo {
+    display: none;
+  }
 }
 
 .header-title {
@@ -80,6 +113,12 @@ a:hover {
   color: #d12767;
 }
 
+@media screen and (max-width:768px) {
+  header .header-menu .menu {
+    display: none;
+  }
+}
+
 .header-menu .menu {
   list-style: none;
   display: flex;
@@ -95,11 +134,12 @@ a:hover {
 .header-menu .menu li:hover {
   background-color: #283d5f;
 }
+
 /*
  * HEADER END
  */
 
- /*
+/*
   * MAIN START
   */
 .post-1 {
@@ -157,8 +197,21 @@ a:hover {
   color: #fff;
 }
 
-.articles .text-wrapper {
-  width: 50%;
+@media screen and (max-width:768px) {
+  .articles article {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .articles .text-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .articles .text-wrapper {
+    width: 50%;
+  }
 }
 
 .articles h2 {
@@ -169,23 +222,30 @@ a:hover {
   padding: 25px 50px 0px;
 }
 
-.articles :nth-child(odd) {
-  flex-direction: row;
+@media screen and (min-width:1400px) {
+  .articles :nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .articles :nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .articles :nth-child(even) .text-wrapper {
+    text-align: right;
+  }
 }
 
-.articles :nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.articles :nth-child(even) .text-wrapper {
-  text-align: right;
+@media screen and (max-width:768px) {
+  .date {
+    text-align: center;
+  }
 }
 
 .date p {
   padding: 25px 15px;
   font-size: var(--artice-h2-font-size);
   margin: 0;
-  font-weight: var(--font-weight);
   opacity: 0.8;
 }
 
@@ -193,6 +253,7 @@ a:hover {
   font-size: 24pt;
   display: block;
 }
+
 /*
  * MAIN END
  */
@@ -200,11 +261,29 @@ a:hover {
 /*
   * NEWS START
   */
-.main-content {
-  display: grid;
-  column-gap: var(--margin);
-  grid-template-columns: 1045px 330px;
+@media screen and (min-width:1400px) {
+  .main-content {
+    display: grid;
+    column-gap: var(--margin);
+    grid-template-columns: 1040px 330px;
+  }
 }
+
+@media screen and (max-width:768px) {
+  .main-content {
+    display: grid;
+    column-gap: var(--margin);
+    grid-template-columns: 320px 225px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 .news img {
   width: 100%;
@@ -226,6 +305,7 @@ a:hover {
 .news a:hover {
   color: var(--link--hover);
 }
+
 /*
  * NEWS END
  */
@@ -233,18 +313,30 @@ a:hover {
 /*
  * FOOTER START 
  */
-footer.content-wraper {
-  background-color: var(--bg-footer-color);
-  display: flex;
-  justify-content: space-between;
+
+
+@media screen and (min-width:1400px) {
+  footer.content-wraper {
+    background-color: var(--bg-footer-color);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .footer-text-wrapper {
+    padding: 40px 35px;
+  }
+
+  footer .author {
+    width: 140px;
+  }
 }
 
-footer .footer-text-wrapper {
-  padding: 40px 35px;
-}
-
-footer .author {
-  width: 140px;
+@media screen and (max-width:768px) {
+  footer.content-wraper {
+    background-color: var(--bg-footer-color);
+    text-align: center;
+    padding: 25px;
+  }
 }
 
 /* .articles {
