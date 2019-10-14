@@ -1,5 +1,5 @@
-'use strict';
 function pipe(x) {
+    'use strict';
     for (let i = 1; i < arguments.length; i++) {
         x = arguments[i](x);
     }

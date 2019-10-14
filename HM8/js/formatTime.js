@@ -1,5 +1,5 @@
-'use strict';
 function formatTime(minutes) {
+    'use strict';
     let outputStr = '';
     outputStr +=  Math.floor(minutes / (24 * 60)) + 'day(s) ';
     minutes %= 24 * 60;
