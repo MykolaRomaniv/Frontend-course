@@ -5,7 +5,7 @@ let goodPassFlag = false;
 
 if (!email) {
     alert('Canceled.');
-} else if (email.length() < 6) {
+} else if (email.length < 6) {
     alert('I don’t know any emails having name length less than 6 symbols');
 } else if (email === 'user@gmail.com' || email === 'admin@gmail.com') {
     goodEmailFlag = true;
@@ -42,7 +42,7 @@ if (goodPassFlag) {
 }
 
 if (newPass) {
-    if (newPass.length() < 5) {
+    if (newPass.length < 5) {
         alert('It’s too short password. Sorry.');
     } else {
         let passCheck = prompt("Enter new password again", '');
