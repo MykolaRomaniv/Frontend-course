@@ -70,12 +70,19 @@ function canConvertToDate(str) {
 // console.log(canConvertToDate('2016-03-18T00:00:00')); // true
 
 function daysBetween(d1, d2) {
-
+    let diff = Date.parse(d1) -  Date.parse(d2);
+    return Math.round(Math.abs(diff) / 8.64e+7);
 }
 // console.log(daysBetween(new Date('2016-03-18T00:00:00'), new Date('2016-04-19T00:00:00')));  // 32
 
 function getAmountOfAdultPeople(data) {
-
+    let adultCount = 0;
+    for (let obj of data) {
+        if (new Date(obj[" birthday "]).getFullYear() < new Date().getFullYear() - 18 ) {
+            adultCount++;
+        } 
+    }
+    return adultCount;
 }
 
 let DATA = [{
