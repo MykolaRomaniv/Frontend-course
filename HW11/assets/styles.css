@@ -62,8 +62,9 @@ input[type="text"] {
     cursor: pointer;
 }
 
-.material-icons.md-blue.md-inactive {
+.material-icons.md-inactive {
     color: #c8d0d8;
+    cursor: pointer;
 }
 
 .list {
